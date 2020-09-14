@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+       <a class = "photo" href="https://ibb.co/dPm4V1q"><img src="https://i.ibb.co/dPm4V1q/IMG-20200719-160852.jpg" alt="IMG-20200719-160852" border="0"></a>
+        <h1>Artur Kleshchanka</h1>
+        <section>
+            <h2>Contacts</h2>
+            <ul>
+                <li><strong>phone</strong>: +375(33)374-55-36;</li>
+                <li><strong>email</strong>: try3987@gmail.com;</li>
+                <li><strong>skype</strong>: orso_grande;</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Summary</h2>
+            <p>My name is Artur and I am a freelance professional front-end developer from Belarus with 1 year of experience. I consider myself a person who follows modern web development practices and new technologies; a person who never stops learning; a person who is trustworthy, responsible, respects deadlines and knows that customer’s satisfaction is the key to success.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>Basic knowledge of JS, HTML, CSS, Python.</p>
+        </section>
+        <section>
+            <h2>My code example</h2>
+            <details>
+                <summary>Click here</summary>
+
+                <div class="code">
+
+                    <pre class="highlight"><code>
+                            <!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Анимация с canvas</title>
+</head>
+<body>
+ <canvas id="canvas" width="200" height="200"></canvas>
+ <script>
+     
+     var circle = function (x, y, radius, fillCircle) {
+         ctx.beginPath();
+         ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+         if (fillCircle) {
+             ctx.fill();
+         } else {
+             ctx.stroke();
+         }
+     };
+     
+     var drawBee = function (x, y) {
+         ctx.lineWidth = 2;
+         ctx.strokeStyle = "Black";
+         ctx.fillStyle = "Gold";
+         
+         circle(x, y, 8, true);
+         circle(x, y, 8, false);
+         circle(x-5, y-11, 5, false);
+         circle(x+5, y-11, 5, false);
+         circle(x-2, y-1, 2, false);
+         circle(x+2, y-1, 2, false);
+         
+     };
+     
+     var update = function (coordinate) {
+         var offset = Math.random() * 2 -1.1;
+         coordinate += offset;
+         
+         if (coordinate > 200) {
+             coordinate = 200;
+         }
+         if (coordinate < 0) {
+             coordinate = 0;
+         }
+         return coordinate;
+     };
+     
+     var canvas = document.getElementById("canvas");
+     var ctx = canvas.getContext("2d");
+     
+     var x = 100;
+     var y = 100;
+     
+     setInterval(function () {
+         ctx.clearRect(0, 0, 200, 200);
+         
+         drawBee(x, y);
+         x = update(x);
+         y = update(y);
+         
+         ctx.strokeRect(0, 0, 200, 200);
+     }, 20);
+ </script>
+</body>
+</html>         
+      </code></pre>
+
+                </div>
+            </details>
+        </section>
+        <section>
+            <h2>Experience</h2>
+            <li>Сustomer Support Agent (iHerb.com)
+    <ul>
+      <li>I quickly and efficiently processed requests from customers of the online store thanks to pre-prepared response templates and excellent knowledge of the online store.</li>
+    </ul>
+  </li>
+       <li>Content Manager (SYVO)
+    <ul>
+      <li>Content creation, product listing, site administration.</li>
+    </ul>
+  </li>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <li>
+   Educational establishment «Mozyr State Polytechnical College»
+
+    <ul>
+      <li>Speciality: «Oil and gas refining»</li>
+    </ul>
+  </li>
+        </section>
+        <section>
+            <h2>English</h2>
+            <p>Pre-intermediate</p>
+        </section>
+    </main>
+</body>
+
+</html>
