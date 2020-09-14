@@ -1,0 +1,49 @@
+body {
+    background: silver;
+    color: white;
+}
+
+main {
+    max-width: 1024px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: #133012;    
+}
+
+li {
+    list-style-type: circle;
+}
+  
+strong {
+    color: yellow;
+}
+
+h1 {
+    color: yellow;
+    font-size: 40px;
+}
+
+h2 {
+    color: yellow;
+}
+
+.photo {
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+    border-radius: 10px;     
+}
+
+.code {
+    padding: 10px;
+    border-radius: 10px;
+    overflow-x: scroll;
+    font-family: 'Courier New', Courier, monospace;    
+    background-color: #f6f8a1;
+    color: black;
+}
+
+section {
+    width: 60%;
+}
